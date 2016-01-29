@@ -1,0 +1,2 @@
+# BouyomiCraft
+Minecraftのチャットを棒読みちゃんで読み上げる外部ツール
