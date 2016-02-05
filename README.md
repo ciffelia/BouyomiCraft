@@ -1,11 +1,11 @@
 # BouyomiCraft
-Minecraftのチャットを棒読みちゃんで読み上げるソフト
+Minecraftのチャットを棒読みちゃんで読み上げるソフト  
 ![BouyomiCraft](app-icon/icon.png)
 
 IssueやPull Requestは自由に送っていただいて構いません。
 
 # 使い方等
-準備中
+[こちら(Minecraft非公式日本ユーザーフォーラム)](http://forum.minecraftuser.jp/viewtopic.php?f=36&t=30070)
 
 # ダウンロード
 [こちら](https://github.com/prince-0203/BouyomiCraft/releases/latest)
