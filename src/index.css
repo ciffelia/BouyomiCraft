@@ -1,0 +1,32 @@
+html body {
+    -webkit-user-select: none;
+}
+
+::selection {
+    background-color: rgba(233, 88, 15, 0.5);
+}
+
+#top-navbar {
+  animation: bg-color 10s infinite;
+}
+@keyframes bg-color {
+  0% { background-color: #e74c3c; }
+  20% { background-color: #f1c40f; }
+  40% { background-color: #1abc9c; }
+  60% { background-color: #3498db; }
+  80% { background-color: #9b59b6; }
+  100% { background-color: #e74c3c; }
+}
+.top-nav-btn {
+    font-size: 23px;
+    color: white;
+
+    background-color: inherit;
+    border: solid 1px white;
+    border-radius: 3px;
+
+    transition: background-color 0.5s;
+}
+.top-nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}

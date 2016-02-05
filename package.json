@@ -1,0 +1,33 @@
+{
+  "name": "bouyomi-craft",
+  "version": "1.0.0",
+  "description": "Minecraftのチャットを棒読みちゃんで読み上げる外部ツール",
+  "main": "src/main.js",
+  "os": [
+    "win32"
+  ],
+  "private": true,
+  "scripts": {
+    "start": "node_modules/.bin/electron .",
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prince-0203/BouyomiCraft.git"
+  },
+  "author": "prince",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prince-0203/BouyomiCraft/issues"
+  },
+  "homepage": "https://github.com/prince-0203/BouyomiCraft#readme",
+  "devDependencies": {
+    "electron-packager": "^5.2.1",
+    "electron-prebuilt": "^0.36.7",
+    "fs-extra": "^0.26.5"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.4.13",
+    "jquery": "^2.2.0"
+  }
+}

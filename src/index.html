@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="honoka/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="loadjQuery.js"></script>
+  <script src="honoka/js/bootstrap.min.js"></script>
+  <script src="mousetrap.min.js"></script>
+  <script src="index.js"></script>
+  <title>BouyomiCraft</title>
+</head>
+<body class="no-thank-yu">
+  <nav id="top-navbar" class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <span class="navbar-brand" style="color: white" data-toggle="tooltip" data-placement="right" title="(c)prince 2016">BouyomiCraft <small>v1.0.0</small></span>
+        <div style="position: absolute; right: 2vw">
+          <button type="button" class="navbar-btn top-nav-btn" data-placement="bottom" title="アプリをリロード" onclick="javascript:win.reload()"><i class="glyphicon glyphicon-refresh"></i></button>
+          <button type="button" class="navbar-btn top-nav-btn" data-toggle="modal" data-placement="bottom" title="設定" data-target="#setingsModal"><i class="glyphicon glyphicon-cog"></i></button>
+        </div>
+      </div><!-- /.navbar-header -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-8">
+        <div class="panel panel-default">
+          <div id="log" class="panel-body" style="height: 10em; overflow: auto; -webkit-user-select: text;"></div>
+        </div><!-- /.panel -->
+      </div><!-- /.col-xs-8 -->
+      <div class="col-xs-4">
+        <div class="checkbox">
+          <label>
+            <input id="isReadEnable" type="checkbox" checked="checked">
+            棒読みちゃんで読み上げる
+          </label>
+        </div><!-- /.checkbox -->
+      </div><!-- /.col-xs-4 -->
+    </div><!-- /.row -->
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>正規表現リスト</h3>
+        <table class="table table-bordered table-striped table-hover" style="overflow-y:auto">
+          <tbody id="RegExpList"></tbody>
+        </table>
+      </div><!-- /.col-xs-12 -->
+    </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="setingsModal" tabindex="-1" role="dialog" aria-labelledby="setingsModalLabel" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="setingsModalLabel">設定</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="form-horizontal">
+              <div class="form-group">
+                <label for="minecraftFolder" class="col-xs-5 control-label">Minecraft ゲームフォルダ</label>
+                <div class="col-xs-6">
+                  <div class="input-group">
+                    <input type="text" id="minecraftFolder" class="form-control">
+                    <span class="input-group-btn">
+                      <button id="minecraftFolderSelect" class="btn btn-default" type="button">参照…</button>
+                    </span>
+                  </div><!-- /.input-group -->
+                </div><!-- /.col-xs-6 -->
+              </div><!-- /.form-group -->
+            </div><!-- /.form-horizontal -->
+          </div><!-- /.row -->
+        </div><!-- /.modal-body -->
+        <div class="modal-footer">
+          <button id="saveAndReload" class="btn btn-primary">保存してアプリをリロード</button>
+        </div><!-- /.modal-footer -->
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /#settingsModal -->
+</body>
+</html>

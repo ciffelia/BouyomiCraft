@@ -1,0 +1,8 @@
+[
+  {
+    "title": "チャットでの発言",
+    "search": "<\\w{3,16}> (.*)",
+    "replace": "$1",
+    "caseInsensitive": false
+  }
+]

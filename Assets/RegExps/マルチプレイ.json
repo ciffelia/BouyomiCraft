@@ -1,0 +1,14 @@
+[
+  {
+    "title": "～さんがログインしました",
+    "search": "^(\\w{3,16}) joined the game$",
+    "replace": "$1さんがログインしました",
+    "caseInsensitive": false
+  },
+  {
+    "title": "～さんがログアウトしました",
+    "search": "^(\\w{3,16}) left the game$",
+    "replace": "$1さんがログアウトしました",
+    "caseInsensitive": false
+  }
+]
