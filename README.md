@@ -23,4 +23,4 @@ npm run build
 ```
 
 # ライセンス
-[MIT License](https://github.com/prince-0203/BouyomiCraft/blob/master/LICENSE)
+[MIT License](LICENSE)
