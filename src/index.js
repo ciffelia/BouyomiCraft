@@ -63,7 +63,7 @@ $(function() {
     // 正規表現リストを読み込み
     $.each(settings.RegExpFiles, function(index, RegExpFile) {
       $('#RegExpList > tr').each(function() {
-        if(RegExpFile == $(this).children('th').text()) {
+        if(RegExpFile === $(this).children('th').text()) {
           $(this).children('td').children('input').prop('checked', true);
         }
       });
