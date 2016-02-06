@@ -1,5 +1,6 @@
 # BouyomiCraft
 [![Dependency Status](https://gemnasium.com/prince-0203/BouyomiCraft.svg)](https://gemnasium.com/prince-0203/BouyomiCraft)
+[![Code Climate](https://codeclimate.com/github/prince-0203/BouyomiCraft/badges/gpa.svg)](https://codeclimate.com/github/prince-0203/BouyomiCraft)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)  
 Minecraftのチャットを棒読みちゃんで読み上げるソフト  
 ![BouyomiCraft](app-icon/icon.png)
