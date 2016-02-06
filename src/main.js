@@ -13,6 +13,8 @@ const app = electron.app;
 
 const BrowserWindow = electron.BrowserWindow;
 
+const path = require('path');
+
 var mainWindow = null;
 
 app.on('window-all-closed', function() {
@@ -27,7 +29,7 @@ app.on('ready', function() {
     show: false
   });
 
-  mainWindow.loadURL('file://' + __dirname + '/index.html');
+  mainWindow.loadURL(path.join('file://', __dirname, '/index.html'));
 
   mainWindow.webContents.on('dom-ready', function() {
     mainWindow.show();
