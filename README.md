@@ -5,6 +5,7 @@
 [![Issue Count](https://codeclimate.com/github/prince-0203/BouyomiCraft/badges/issue_count.svg)](https://codeclimate.com/github/prince-0203/BouyomiCraft)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)  
 Minecraftのチャットを棒読みちゃんで読み上げるソフト  
+[![](http://i.imgur.com/OGgryIjm.png)](http://imgur.com/OGgryIj)
 ![BouyomiCraft](app-icon/icon.png)
 
 IssueやPull Requestは自由に送っていただいて構いません。
