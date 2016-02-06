@@ -20,7 +20,7 @@ const obj = {
   overwrite: true,
   asar: true,
   prune: true,
-  ignore: 'build\\.js$|README\\.md$|\\.gitignore|electron-packager-dist($|/)|app-icon($|/)|Assets($|/)',
+  ignore: 'electron-build\\.js$|README\\.md$|\\.gitignore|electron-packager-dist($|/)|app-icon($|/)|Assets($|/)',
   'version-string': {
     CompanyName: config.author,
     FileDescription: config.description,

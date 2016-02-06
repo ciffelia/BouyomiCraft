@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "start": "node_modules/.bin/electron .",
-    "build": "node build.js"
+    "build": "node electron-build.js"
   },
   "repository": {
     "type": "git",
