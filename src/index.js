@@ -24,6 +24,8 @@ const iconvLite = require('iconv-lite');
 // HTMLエスケープ
 const escapeHtml = require('./escapeHtml');
 
+const errorDialog = require('./errorDialog');
+
 var settings = JSON.parse(fs.readFileSync('./Assets/settings.json'));
 
 var RegExps = [];
@@ -106,13 +108,7 @@ $(function() {
   // ログファイルを開く
   fs.open(path.join(settings.minecraftFolder, 'logs/latest.log'), 'r', function(e, fd) {
     if(e) {
-      dialog.showMessageBox(win, {
-        type: 'error',
-        buttons: ['OK'],
-        title: 'Error - BouyomiCraft',
-        message: 'ログを読み込めませんでした',
-        detail: 'ログを読み込めませんでした。アプリのリロードをお試しください。'
-      });
+      errorDialog(win, 'ログを読み込めませんでした', 'ログを読み込めませんでした。アプリのリロードをお試しください。');
     } else {
       fs.watchFile(path.join(settings.minecraftFolder, 'logs/latest.log'), { persistent: true, interval: 100 }, function (curr, prev) {
           const position = prev.size;
@@ -124,13 +120,7 @@ $(function() {
             fs.read(fd, buf, 0, size, position, function(e) {
               // 新しいログを読み込み
               if(e) {
-                dialog.showMessageBox(win, {
-                  type: 'error',
-                  buttons: ['OK'],
-                  title: 'Error - BouyomiCraft',
-                  message: 'ログを読み込めませんでした',
-                  detail: 'ログを読み込めませんでした。アプリのリロードをお試しください。'
-                });
+                errorDialog(win, 'ログを読み込めませんでした', 'ログを読み込めませんでした。アプリのリロードをお試しください。');
               } else {
                 // 配列に変換
                 var newLogs = iconvLite.decode(buf, 'Shift_JIS').split(/\[\d{2}:\d{2}:\d{2}\] /);
@@ -162,13 +152,7 @@ $(function() {
                   if($('#isReadEnable').prop('checked')) {
                     sendBouyomi(sendText, '50001', function(e) {
                       if(e) {
-                        dialog.showMessageBox(win, {
-                          type: 'error',
-                          buttons: ['OK'],
-                          title: 'Error - BouyomiCraft',
-                          message: '棒読みちゃんに接続できませんでした',
-                          detail: '棒読みちゃんに接続できませんでした。棒読みちゃんが起動しているかお確かめください。'
-                        });
+                        errorDialog(win, '棒読みちゃんに接続できませんでした', '棒読みちゃんに接続できませんでした。棒読みちゃんが起動しているかお確かめください。');
                       }
                     });
                   }
