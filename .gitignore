@@ -34,3 +34,6 @@ node_modules
 
 # Electron packager output folder
 electron-packager-dist
+
+# Sublime Text Project
+*.sublime-*
