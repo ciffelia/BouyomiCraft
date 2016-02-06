@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/prince-0203/BouyomiCraft.svg?branch=master)](https://travis-ci.org/prince-0203/BouyomiCraft)
 [![Dependency Status](https://gemnasium.com/prince-0203/BouyomiCraft.svg)](https://gemnasium.com/prince-0203/BouyomiCraft)
 [![Code Climate](https://codeclimate.com/github/prince-0203/BouyomiCraft/badges/gpa.svg)](https://codeclimate.com/github/prince-0203/BouyomiCraft)
-[![Issue Count](https://codeclimate.com/github/prince-0203/BouyomiCraft/badges/issue_count.svg)](https://codeclimate.com/github/prince-0203/BouyomiCraft)
+[![Code Climate Issue Count](https://codeclimate.com/github/prince-0203/BouyomiCraft/badges/issue_count.svg)](https://codeclimate.com/github/prince-0203/BouyomiCraft)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)  
 Minecraftのチャットを棒読みちゃんで読み上げるソフト  
 [![](http://i.imgur.com/OGgryIjm.png)](http://imgur.com/OGgryIj)
