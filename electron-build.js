@@ -23,8 +23,7 @@ const obj = {
   ignore: 'electron-build\\.js$|README\\.md$|\\.gitignore$|electron-packager-dist($|/)|app-icon($|/)|Assets($|/)',
   'version-string': {
     CompanyName: config.author,
-    FileDescription: config.description,
-    OriginalFilename: config.name,
+    FileDescription: config.name,
     FileVersion: config.version,
     ProductVersion: config.version,
     ProductName: config.name,
