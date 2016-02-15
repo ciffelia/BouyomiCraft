@@ -20,12 +20,14 @@ module.exports = function sendBouyomi(msg, port, callback) {
   client.connect(port ? port : '50001', 'localhost');
 
   client.on('error', function(e){
-    callback(e);
+    if(callback)
+      callback(e);
   });
 
   client.on('connect', function(){
     client.end(buffer);
-
-    callback();
+    
+    if(callback)
+      callback();
   });
 };

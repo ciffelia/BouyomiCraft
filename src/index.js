@@ -150,9 +150,9 @@ $(function() {
                     }
                   });
                   if($('#isReadEnable').prop('checked')) {
-                    sendBouyomi(sendText, '50001', function(e) {
+                    sendBouyomi(sendText, null, function(e) {
                       if(e) {
-                        errorDialog(win, '棒読みちゃんに接続できませんでした', '棒読みちゃんに接続できませんでした。棒読みちゃんが起動しているかお確かめください。');
+                        console.warn('棒読みちゃんに接続できませんでした。棒読みちゃんが起動しているかお確かめください。');
                       }
                     });
                   }
