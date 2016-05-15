@@ -1,7 +1,7 @@
 {
   "name": "bouyomi-craft",
   "version": "1.0.1",
-  "description": "Minecraftのチャットを棒読みちゃんで読み上げる外部ツール",
+  "description": "Minecraftのチャットを棒読みちゃんで読み上げるソフト",
   "main": "src/main.js",
   "os": [
     "win32"
