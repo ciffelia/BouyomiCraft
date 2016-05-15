@@ -1,5 +1,5 @@
 /*
- * BouyomiCraft v1.0.0
+ * BouyomiCraft v1.0.1
  *  Minecraftのチャットを棒読みちゃんで読み上げるソフト
  *  Author: prince(MinecraftID: prince_0203)
  *  制作開始: 2016/01/29
