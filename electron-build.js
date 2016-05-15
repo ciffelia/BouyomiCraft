@@ -7,27 +7,27 @@ const fse = require('fs-extra');
 const obj = {
   dir: './',
   out: './electron-packager-dist',
-  name: config.name,
   platform: 'win32',
-  arch: 'all',
+  arch: 'ia32',
   icon: './app-icon/icon.ico',
-  version: '0.36.7',
+  overwrite: true,
 
   'app-bundle-id': 'io.github.prince-0203',
 
   'app-version': config.version,
+  'app-copyright': '(c) prince 2016',
   'helper-bundle-id': 'io.github.prince-0203',
   overwrite: true,
   asar: true,
   prune: true,
   ignore: 'electron-build\\.js$|README\\.md$|\\.gitignore$|electron-packager-dist($|/)|app-icon($|/)|Assets($|/)',
+
   'version-string': {
-    CompanyName: config.author,
-    FileDescription: config.name,
-    FileVersion: config.version,
-    ProductVersion: config.version,
-    ProductName: config.name,
-    InternalName: config.name
+    CompanyName: 'prince',
+    FileDescription: 'BouyomiCraft',
+    OriginalFilename: 'bouyomi-craft.exe',
+    ProductName: 'BouyomiCraft',
+    InternalName: 'BouyomiCraft'
   }
 };
 packager(obj, function done(err, appPath) {
@@ -40,7 +40,6 @@ packager(obj, function done(err, appPath) {
     settings.minecraftFolder = null;
     fse.writeFileSync('./Assets/settings.json', JSON.stringify(settings, null, '  ') + '\n');
 
-    fse.copySync('./Assets', obj.out + '/' + config.name + '-win32-x64/Assets');
     fse.copySync('./Assets', obj.out + '/' + config.name + '-win32-ia32/Assets');
 
     console.log('Done.');
