@@ -23,7 +23,7 @@
   "homepage": "https://github.com/prince-0203/BouyomiCraft#readme",
   "devDependencies": {
     "electron-packager": "^7.0.1",
-    "electron-prebuilt": "^1.0.2",
+    "electron-prebuilt": "^1.2.6",
     "fs-extra": "^0.30.0"
   },
   "dependencies": {
